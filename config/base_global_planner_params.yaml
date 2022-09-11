@@ -1,0 +1,14 @@
+BRRTStarPlanner:
+  tolerance: 0.5
+  radius: 0.1
+  epsilon_min: 0.01
+  epsilon_max: 0.1
+  max_node_num: 10000
+  # waypoint_step: 0.025
+  robot_radius: 0.1 # 0.45  #0.29 # obstacle collision
+  inter_radius: -1.0
+  timeout_second: 20.0
+  global_visualization: true
+  global_debug: true
+  map_debug: false
+  visualization_step: 1

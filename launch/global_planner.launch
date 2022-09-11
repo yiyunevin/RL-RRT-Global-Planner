@@ -1,0 +1,20 @@
+<launch>
+  <arg name="test" default="false"/>
+
+  <group unless="$(arg test)">
+    <node pkg="rrt_planner" type="rrt_planner" respawn="false" name="rrt_planner" output="screen">
+      <rosparam file="$(find rrt_planner)/config/base_global_planner_params.yaml" command="load" />
+      <param name="mk_frame" value="true"/>
+    </node>
+  </group>
+
+  <group if="$(arg test)">
+    <node pkg="rrt_planner" type="rrt_planner" respawn="false" name="rrt_planner" output="screen">
+      <rosparam file="$(find rrt_planner)/config/base_global_planner_params.yaml" command="load" />
+      <param name="mk_frame" value="false"/>
+    </node>
+    <node pkg="rviz" type="rviz" name="rviz" required="true"
+            args="-d $(find rrt_planner)/config/global_test.rviz"/>
+  </group>
+
+</launch>
