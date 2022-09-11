@@ -1,3 +1,7 @@
+/**
+* 2022.07.28 Last Edited by Evin Hsu
+*/
+
 #ifndef RRT_NODE_H_
 #define RRT_NODE_H_
 
