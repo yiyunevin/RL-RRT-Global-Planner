@@ -35,7 +35,9 @@ $ python3 ~/rrt_rl_review_ws/src/rrt_planner/script/rrt_planner_test.py --planne
 
 ## Result
 
-red: start ; green: destination; cyan: inter. points.
++ red: start
++ green: destination
++ cyan: intermediate points.
 
 <p align=center>
   <img width="50%" src=https://github.com/yiyunevin/Globla-Planner/blob/main/maps/stage_1/global_planning_result.png?raw=true>
